@@ -1,0 +1,114 @@
+
+h1 {
+ color:rgb(88, 191, 199);
+ text-align: center;
+ -webkit-transition:0.2s;
+ transition : 0.2s;
+}
+
+h1:hover{
+    -webkit-transform: rotate(-10deg) scale(2);
+    transform: rotate(-10deg) scale(2);
+}
+
+*{
+ border:rgb(194, 196, 196)
+}
+
+.header{
+    background-color:rgb(211, 54, 80);
+    display : flex;
+    justify-content: center;
+    animation-name: bg;
+    animation-duration: 15s;
+}
+ @keyframes bg{
+     from{ background-color: rgb(211, 54, 80); }
+     to{background-color: rgb(95, 9, 129)}
+ }
+
+ .header:hover{
+     background-color: rebeccapurple;
+ }
+.grid{
+    display : flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+.footer{
+    display : flex;
+    justify-content: flex-start;
+    -webkit-transition:0.2s;
+    transition : 0.2s;
+}
+
+/*.footer:hover{
+    -webkit-transform: rotate(0deg) scale(2);
+    transform: rotate(0deg) scale(2);
+}*/
+
+
+p,h2{
+    text-align: center;
+    -webkit-transition:0.2s;
+    transition : 0.2s;
+}
+
+
+body{
+    background-color: rgb(240, 47, 127) ;
+    background-image: url("bg.png");
+}
+
+.para{
+    background-color: rebeccapurple;
+    display: flexbox;
+    justify-content: start;
+    text-align: left;
+    color: thistle;
+}
+
+h3{
+    background-color: turquoise;
+}
+
+a:link{
+    color:white;
+}
+
+a:visited{
+    color:whitesmoke;
+}
+
+.item{
+    position: relative;
+}
+
+.item img{
+    margin: 20px;
+}
+
+.item p {
+   position:absolute;
+   top: 50%;;
+   left:50%;
+   transform: translate(-90%,-90%);
+   opacity: 0;
+   -webkit-transition:0.2s;
+   transition : 0.2s;
+}
+
+.item:hover p{
+   opacity: 1;
+   -webkit-transform: rotate(0deg) scale(1);
+   transform: rotate(0deg) scale(1);
+}
+
+.item:hover img{
+    opacity:0.5;
+}
+
+.menu{
+    display: flexbox ; 
+}
